@@ -2,5 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns=[
-    path("",views.tset)
+    path("",views.ArticleView.as_view())
 ]
