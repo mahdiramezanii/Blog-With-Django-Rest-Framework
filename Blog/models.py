@@ -7,8 +7,6 @@ class Article(models.Model):
     created=models.DateTimeField(auto_now_add=True)
     discription=models.TextField()
 
-
-
     def __str__(self):
 
         return self.titel
