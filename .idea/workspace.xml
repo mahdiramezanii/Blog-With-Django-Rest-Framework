@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1cded83-a053-46c0-9412-93f0bc558b77" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog_With_Django_Rest_framework/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog_With_Django_Rest_framework/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog_With_Django_Rest_framework/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog_With_Django_Rest_framework/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Acount/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Acount/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Acount/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Acount/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Acount/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Acount/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662214669475</updated>
       <workItem from="1662214698455" duration="5727000" />
-      <workItem from="1662272760846" duration="424000" />
+      <workItem from="1662272760846" duration="1946000" />
     </task>
     <servers />
   </component>
