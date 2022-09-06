@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c1cded83-a053-46c0-9412-93f0bc558b77" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Acount/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Acount/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Acount/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Acount/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Acount/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Acount/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Blog_With_Django_Rest_framework" type="Python.DjangoServer" factoryName="Django server">
@@ -71,7 +73,9 @@
       <option name="presentableId" value="Default" />
       <updated>1662214669475</updated>
       <workItem from="1662214698455" duration="5727000" />
-      <workItem from="1662272760846" duration="1946000" />
+      <workItem from="1662272760846" duration="3645000" />
+      <workItem from="1662443545784" duration="22000" />
+      <workItem from="1662444026017" duration="1062000" />
     </task>
     <servers />
   </component>

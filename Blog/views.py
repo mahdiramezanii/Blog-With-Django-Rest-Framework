@@ -5,6 +5,7 @@ from rest_framework.response import Response
 from Blog.models import Article
 from Blog.serializers import ArticleSerializer
 from rest_framework import status
+from rest_framework.authentication import TokenAuthentication
 # @api_view(["POST","GET"])
 # def tset(requset):
 #
@@ -34,12 +35,19 @@ class ArticleDetail(APIView):
 
 
 class ArticleAddView(APIView):
+    authentication_classes = [TokenAuthentication]
 
     def post(self,request):
 
         serializer=ArticleSerializer(data=request.data)
 
+
+
         if serializer.is_valid():
+
+            if request.user.is_authenticated:
+                serializer.validated_data["user"]=request.user
+
             serializer.save()
 
             return Response({"message":"added"},status=status.HTTP_200_OK)

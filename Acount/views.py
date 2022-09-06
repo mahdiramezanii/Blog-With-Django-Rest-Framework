@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from Acount.serializers import Userserializer
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework.authtoken.models import Token
 
 
 class RegisterView(APIView):
@@ -19,5 +20,9 @@ class RegisterView(APIView):
 
         else:
             return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
+
+
+
+
 
 
