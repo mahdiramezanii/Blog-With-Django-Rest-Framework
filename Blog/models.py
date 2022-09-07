@@ -11,3 +11,15 @@ class Article(models.Model):
 
         return self.titel
 
+class Comment(models.Model):
+    article=models.ForeignKey(Article,related_name="comment",on_delete=models.CASCADE)
+    text=models.TextField()
+    created=models.DateTimeField()
+
+
+    def __str__(self):
+
+        return self.text[:30]
+
+
+

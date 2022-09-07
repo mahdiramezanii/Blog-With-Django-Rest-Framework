@@ -5,11 +5,11 @@ from Blog.serializers import ArticleSerializer
 
 class Userserializer(serializers.ModelSerializer):
     article=serializers.SerializerMethodField()
-    username=serializers.CharField(write_only=True)
     password=serializers.CharField(write_only=True)
     class Meta:
         model = User
         fields = "__all__"
+        read_only_fields=["username"]
 
 
     def get_article(self,obj):
