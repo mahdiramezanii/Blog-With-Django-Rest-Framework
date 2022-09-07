@@ -6,6 +6,11 @@ from Blog.models import Article
 from Blog.serializers import ArticleSerializer,CommentSerializer
 from rest_framework import status
 from rest_framework.authentication import TokenAuthentication
+from .permisions import CostomPermision
+from rest_framework.authentication import TokenAuthentication
+
+from rest_framework.permissions import IsAuthenticated
+
 # @api_view(["POST","GET"])
 # def tset(requset):
 #
@@ -55,9 +60,15 @@ class ArticleAddView(APIView):
         return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
 
 class ArticleUpdateView(APIView):
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [CostomPermision]
 
     def put(self,request,pk):
+
         instance=Article.objects.get(id=pk)
+
+        self.check_object_permissions(request,instance)
+
         serializer=ArticleSerializer(data=request.data,partial=True)
 
         if serializer.is_valid():
