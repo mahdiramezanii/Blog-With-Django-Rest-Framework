@@ -22,6 +22,18 @@ class RegisterView(APIView):
             return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
 
 
+class UserList(APIView):
+
+    def get(self,request):
+        user=User.objects.all()
+        serializer=Userserializer(instance=user,many=True)
+
+        return Response(serializer.data)
+
+
+
+
+
 
 
 

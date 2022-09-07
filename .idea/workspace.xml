@@ -5,8 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Acount/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Acount/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Acount/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Acount/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,10 @@
       <workItem from="1662214698455" duration="5727000" />
       <workItem from="1662272760846" duration="3645000" />
       <workItem from="1662443545784" duration="22000" />
-      <workItem from="1662444026017" duration="1062000" />
+      <workItem from="1662444026017" duration="1982000" />
+      <workItem from="1662471377669" duration="10000" />
+      <workItem from="1662472623231" duration="861000" />
+      <workItem from="1662557470683" duration="437000" />
     </task>
     <servers />
   </component>
