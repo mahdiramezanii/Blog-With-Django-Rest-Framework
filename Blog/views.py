@@ -3,7 +3,7 @@ from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from Blog.models import Article
-from Blog.serializers import ArticleSerializer
+from Blog.serializers import ArticleSerializer,CommentSerializer
 from rest_framework import status
 from rest_framework.authentication import TokenAuthentication
 # @api_view(["POST","GET"])
@@ -75,6 +75,19 @@ class ArticleDeleteView(APIView):
         instance.delete()
 
         return Response({"message":"deleted"},status=status.HTTP_200_OK)
+
+
+class CommentArticle(APIView):
+
+    def get(self,request,pk):
+
+        instance=Article.objects.get(id=pk).comment.all()
+
+        serializer=CommentSerializer(instance=instance,many=True)
+
+
+        return Response(serializer.data,status=status.HTTP_200_OK)
+
 
 
 

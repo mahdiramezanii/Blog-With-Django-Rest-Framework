@@ -14,7 +14,7 @@ class Article(models.Model):
 class Comment(models.Model):
     article=models.ForeignKey(Article,related_name="comment",on_delete=models.CASCADE)
     text=models.TextField()
-    created=models.DateTimeField()
+    created=models.DateTimeField(auto_now_add=True)
 
 
     def __str__(self):
