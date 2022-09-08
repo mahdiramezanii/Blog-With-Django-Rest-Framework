@@ -11,9 +11,12 @@ class CommentSerializer(serializers.ModelSerializer):
 
 class ArticleSerializer(serializers.ModelSerializer):
     comment=serializers.SlugRelatedField(slug_field="text",read_only=True,many=True)
+    
     class Meta:
         model=Article
         fields="__all__"
-        read_only_fields=["id",]
+        read_only_fields=["id","comment"]
+
+
 
 
