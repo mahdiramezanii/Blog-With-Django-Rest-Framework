@@ -5,6 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blog/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog_With_Django_Rest_framework/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog_With_Django_Rest_framework/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog_With_Django_Rest_framework/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog_With_Django_Rest_framework/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +82,7 @@
       <workItem from="1662472623231" duration="861000" />
       <workItem from="1662557470683" duration="7306000" />
       <workItem from="1662650638438" duration="95000" />
-      <workItem from="1662653534089" duration="325000" />
+      <workItem from="1662653534089" duration="1257000" />
     </task>
     <servers />
   </component>

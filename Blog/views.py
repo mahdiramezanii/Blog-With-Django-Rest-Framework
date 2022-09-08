@@ -23,7 +23,7 @@ class ArticleView(APIView):
     def get(self,request):
         instance=Article.objects.all()
 
-        serializer=ArticleSerializer(instance=instance,many=True)
+        serializer=ArticleSerializer(instance=instance,many=True,context={"request":request})
 
 
         return Response(data=serializer.data)
@@ -33,7 +33,7 @@ class ArticleDetail(APIView):
 
     def post(self,request,pk):
         query_set=Article.objects.get(id=pk)
-        serializer=ArticleSerializer(instance=query_set)
+        serializer=ArticleSerializer(instance=query_set,context={"request":request})
 
 
         return Response(data=serializer.data)
