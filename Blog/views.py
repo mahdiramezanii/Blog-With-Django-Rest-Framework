@@ -11,6 +11,8 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.pagination import PageNumberPagination
 
+from rest_framework import viewsets
+
 class ArticleView(APIView):
 
 
@@ -97,6 +99,62 @@ class CommentArticle(APIView):
         return Response(serializer.data,status=status.HTTP_200_OK)
 
 
+
+
+class ArticleViewSet(viewsets.ViewSet):
+
+    def list(self,request):
+
+        instance=Article.objects.all()
+        paginator=PageNumberPagination()
+        query_set=paginator.paginate_queryset(instance,request=request)
+
+        serializer=ArticleSerializer(instance=query_set,many=True,context={"request":request})
+
+        return Response(serializer.data)
+
+    def retrieve(self,request,pk=None):
+
+        article=Article.objects.get(id=pk)
+        serialize=ArticleSerializer(instance=article,context={"request":request})
+
+        return Response(serialize.data)
+
+    def create(self,request):
+
+        serializer=ArticleSerializer(data=request.data)
+
+
+        if serializer.is_valid():
+
+            serializer.save()
+
+            return Response({"message":"Adedd"},status=status.HTTP_200_OK)
+
+        return Response(serializer.errors)
+
+    def delete(self,request,pk=None):
+
+        article=Article.objects.get(id=pk)
+
+        article.delete()
+
+        return Response({"message":"Deleted"})
+
+
+    def update(self,request,pk=None):
+
+        article=Article.objects.get(id=pk)
+
+        serilizer=ArticleSerializer(data=request.data,instance=article,partial=True)
+
+        if serilizer.is_valid():
+
+            serilizer.save()
+
+            return Response({"message":"Update"},status=status.HTTP_200_OK)
+
+        return Response(serilizer.errors)
 
 
 

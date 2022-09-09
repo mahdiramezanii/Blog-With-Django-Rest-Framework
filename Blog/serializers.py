@@ -21,10 +21,11 @@ class ArticleSerializer(serializers.ModelSerializer):
 
         request=self.context.get("request")
 
-        if obj.image:
+        if obj.image != None:
             image_url=obj.image.url
 
             return request.build_absolute_uri(image_url)
+
         return None
 
 
