@@ -8,22 +8,19 @@ from rest_framework import status
 from rest_framework.authentication import TokenAuthentication
 from .permisions import CostomPermision
 from rest_framework.authentication import TokenAuthentication
-
 from rest_framework.permissions import IsAuthenticated
-
-# @api_view(["POST","GET"])
-# def tset(requset):
-#
-#
-#     return Response({"messgae":"Hi"})
-
+from rest_framework.pagination import PageNumberPagination
 
 class ArticleView(APIView):
 
+
     def get(self,request):
         instance=Article.objects.all()
+        paginator=PageNumberPagination()
 
-        serializer=ArticleSerializer(instance=instance,many=True,context={"request":request})
+        queryset=paginator.paginate_queryset(instance,request=request)
+
+        serializer=ArticleSerializer(instance=queryset,many=True,context={"request":request})
 
 
         return Response(data=serializer.data)
